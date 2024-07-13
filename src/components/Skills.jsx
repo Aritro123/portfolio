@@ -6,6 +6,9 @@ import reactImage from "../assets/react.png";
 // import graphql from "../assets/graphql.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+import git from "../assets/git2.png";
+import node from "../assets/node.png";
+import md from "../assets/md2.png";
 
 const Skills = () => {
   const techs = [
@@ -39,17 +42,29 @@ const Skills = () => {
       title: "Tailwind",
       style: "shadow-sky-400",
     },
-    // {
-    //   id: 6,
-    //   src: nextjs,
-    //   title: "Next JS",
-    //   style: "shadow-white",
-    // },
     {
       id: 6,
+      src: git,
+      title: "git",
+      style: "shadow-orange-500",
+    },
+    {
+      id: 7,
       src: github,
       title: "GitHub",
       style: "shadow-gray-400",
+    },
+    {
+      id: 8,
+      src: node,
+      title: "Node.js",
+      style: "shadow-green-300",
+    },
+    {
+      id: 9,
+      src: md,
+      title: " mongoDb ",
+      style: "shadow-green-500",
     },
   ];
 

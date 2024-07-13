@@ -1,7 +1,7 @@
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
+import flicktalk from "../assets/portfolio/flicktalk.png";
 import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import portfolio from "../assets/portfolio/portfolio.png";
+import artgallery from "../assets/portfolio/artgallery.png";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
 
@@ -9,28 +9,41 @@ const Project = () => {
   const project = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: flicktalk,
+      code: "https://github.com/Aritro123/Flick-Talk",
+      demo: "",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: artgallery,
+      code: "https://github.com/Aritro123/Art-gallery-Website",
+      demo: "https://artgallery07.netlify.app/",
     },
     {
       id: 3,
-      src: navbar,
+      src: portfolio,
+      code: "https://github.com/Aritro123/portfolio",
+      demo: "https://aritrosportfolio.netlify.app/",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: reactWeather,
+      code: "https://github.com/Aritro123/Weather-App-main",
+      demo: "https://aritrosweatherapp.netlify.app/",
     },
     {
       id: 5,
-      src: installNode,
+      src: reactSmooth,
+      code: "https://www.linkedin.com/in/aritro-mondal/",
+      demo: "",
     },
     {
       id: 6,
-      src: reactWeather,
+      src: installNode,
+      code: "https://www.linkedin.com/in/aritro-mondal/",
+      demo: "",
     },
+    
   ];
 
   return (
@@ -47,19 +60,19 @@ const Project = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {project.map(({ id, src }) => (
+          {project.map(({ id, src, code, demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
-              <div className="flex items-center justify-center">
+              <div key={id} className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
+                  <a href={demo}>Demo</a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
+                <a href={code}>Code</a>
                 </button>
               </div>
             </div>
