@@ -11,7 +11,7 @@ const Project = () => {
       id: 1,
       src: flicktalk,
       code: "https://github.com/Aritro123/Flick-Talk",
-      demo: "",
+      demo: "https://flick-talk.netlify.app/",
     },
     {
       id: 2,
